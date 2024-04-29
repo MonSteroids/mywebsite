@@ -16,8 +16,8 @@ body {
 }
 
 h1.myname {
-    font-size: 4em;
-    margin-bottom: 20px;
+    font-size: 3em; /* Adjusted font size for mobile */
+    margin-bottom: 10px; /* Reduced margin for smaller screens */
     color: black !important;
 }
 
@@ -26,14 +26,17 @@ h1.myname {
 }
 
 .social-link {
-    display: inline-block;
-    margin: 0 10px;
-    padding: 10px 20px;
-    border: 1px solid white;
-    border-radius: 5px;
+    display: block; /* Changed to block for better touchability */
+    margin-bottom: 10px; /* Added margin between social links */
+    padding: 10px 0; /* Adjusted padding for better touchability */
+    border-bottom: 1px solid white; /* Added border between social links */
     text-decoration: none;
     color: black;
     transition: all 0.3s ease;
+}
+
+.social-link:last-child {
+    border-bottom: none; /* Remove border for the last social link */
 }
 
 .social-link:hover {
